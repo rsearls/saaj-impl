@@ -56,7 +56,7 @@
     </description>
     <scm>
         <connection>scm:git:https://github.com/jboss/saaj-impl.git</connection>
-        <developerConnection>scm:git:git@github.com:jboss/saaj-impl.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/jboss/saaj-impl.git</developerConnection>
         <url>https://github.com/jboss/saaj-impl</url>
         <tag>HEAD</tag>
     </scm>
