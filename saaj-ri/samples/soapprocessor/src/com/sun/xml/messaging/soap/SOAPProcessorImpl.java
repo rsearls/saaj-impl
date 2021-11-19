@@ -41,7 +41,7 @@
 package com.sun.xml.messaging.soap;
 
 import java.util.Iterator;
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 
 public class SOAPProcessorImpl extends SOAPProcessor {
 

@@ -49,7 +49,7 @@
 import java.io.IOException;
 import java.util.Date;
 
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 
 public class TimeServer implements SOAPCallback {
 

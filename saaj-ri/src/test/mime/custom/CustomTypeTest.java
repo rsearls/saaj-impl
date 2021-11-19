@@ -50,8 +50,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Iterator;
 
-import javax.activation.*;
-import javax.xml.soap.*;
+import jakarta.activation.*;
+import jakarta.xml.soap.*;
 
 import junit.framework.TestCase;
 

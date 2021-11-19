@@ -46,7 +46,7 @@
 package soap12;
 
 
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 import java.io.*;
 import javax.xml.namespace.QName;
 

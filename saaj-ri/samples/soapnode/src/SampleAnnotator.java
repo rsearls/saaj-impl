@@ -40,8 +40,8 @@
 
 import com.sun.xml.soap.*;
 
-import javax.xml.soap.SOAPHeader;
-import javax.xml.soap.SOAPException;
+import jakarta.xml.soap.SOAPHeader;
+import jakarta.xml.soap.SOAPException;
 
 public class SampleAnnotator extends SOAPAnnotator {
 

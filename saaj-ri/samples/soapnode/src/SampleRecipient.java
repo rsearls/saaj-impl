@@ -40,8 +40,8 @@
 
 import com.sun.xml.soap.*;
 
-import javax.xml.soap.SOAPHeaderElement;
-import javax.xml.soap.SOAPException;
+import jakarta.xml.soap.SOAPHeaderElement;
+import jakarta.xml.soap.SOAPException;
 
 public class SampleRecipient extends SOAPRecipient {
 

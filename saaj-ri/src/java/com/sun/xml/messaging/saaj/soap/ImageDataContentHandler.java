@@ -41,7 +41,6 @@
 package com.sun.xml.messaging.saaj.soap;
 
 import java.awt.*;
-import java.awt.datatransfer.DataFlavor;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.Arrays;
@@ -49,7 +48,7 @@ import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.activation.*;
+import jakarta.activation.*;
 import javax.imageio.ImageIO;
 import javax.imageio.ImageWriter;
 import javax.imageio.stream.ImageOutputStream;
@@ -63,11 +62,11 @@ public class ImageDataContentHandler extends Component
         Logger.getLogger(LogDomainConstants.SOAP_DOMAIN,
                          "com.sun.xml.messaging.saaj.soap.LocalStrings");
     
-    private DataFlavor[] flavor;
+    private ActivationDataFlavor[] flavor;
 
     public ImageDataContentHandler() {
         String[] mimeTypes = ImageIO.getReaderMIMETypes();
-        flavor = new DataFlavor[mimeTypes.length];
+        flavor = new ActivationDataFlavor[mimeTypes.length];
         for(int i=0; i < mimeTypes.length; i++) {
             flavor[i] = new ActivationDataFlavor(
                 java.awt.Image.class, mimeTypes[i], "Image");
@@ -75,15 +74,15 @@ public class ImageDataContentHandler extends Component
     }
 
     /**
-     * Returns an array of DataFlavor objects indicating the flavors the
+     * Returns an array of ActivationDataFlavor objects indicating the flavors the
      * data can be provided in. The array should be ordered according to
      * preference for providing the data (from most richly descriptive to
      * least descriptive).
      *
-     * @return The DataFlavors.
+     * @return The ActivationDataFlavor.
      */
     @Override
-    public DataFlavor[] getTransferDataFlavors() {
+    public ActivationDataFlavor[] getTransferDataFlavors() {
         return Arrays.copyOf(flavor, flavor.length);
     }
 
@@ -92,12 +91,12 @@ public class ImageDataContentHandler extends Component
      * The class of the object returned is defined by the representation class
      * of the flavor.
      *
-     * @param df The DataFlavor representing the requested type.
+     * @param df The ActivationDataFlavor representing the requested type.
      * @param ds The DataSource representing the data to be converted.
      * @return The constructed Object.
      */
     @Override
-    public Object getTransferData(DataFlavor df, DataSource ds)
+    public Object getTransferData(ActivationDataFlavor df, DataSource ds)
         throws IOException {
         for (int i=0; i < flavor.length; i++) {
             if (flavor[i].equals(df)) {

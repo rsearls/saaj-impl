@@ -46,7 +46,7 @@ import java.io.*;
 
 import java.util.Iterator;
 
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 import javax.xml.transform.stream.*;
 
 public class GetChildElementsTest extends TestCase {

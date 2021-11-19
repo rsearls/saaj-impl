@@ -40,7 +40,7 @@
 
 package com.sun.xml.soap;
 
-import javax.xml.soap.SOAPHeader;
+import jakarta.xml.soap.SOAPHeader;
 
 public abstract class SOAPAnnotator implements ProcessingFaultHandler{
 

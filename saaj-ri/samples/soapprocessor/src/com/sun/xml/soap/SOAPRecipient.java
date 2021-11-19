@@ -44,7 +44,7 @@ import java.util.Iterator;
 import java.util.Vector;
 
 import javax.xml.namespace.QName;
-import javax.xml.soap.SOAPHeaderElement;
+import jakarta.xml.soap.SOAPHeaderElement;
 
 public abstract class SOAPRecipient implements ProcessingFaultHandler {
 

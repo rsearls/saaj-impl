@@ -43,7 +43,7 @@ package namespace;
 import java.io.ByteArrayInputStream;
 
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
