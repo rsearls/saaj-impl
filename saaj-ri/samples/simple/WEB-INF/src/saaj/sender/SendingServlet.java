@@ -46,10 +46,10 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.activation.DataHandler;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.xml.soap.*;
+import jakarta.activation.DataHandler;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+import jakarta.xml.soap.*;
 
 
 /**

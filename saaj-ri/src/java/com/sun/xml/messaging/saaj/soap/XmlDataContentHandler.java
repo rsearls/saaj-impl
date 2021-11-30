@@ -40,11 +40,10 @@
 
 package com.sun.xml.messaging.saaj.soap;
 
-import java.awt.datatransfer.DataFlavor;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import javax.activation.*;
+import jakarta.activation.*;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.stream.StreamResult;
@@ -68,12 +67,12 @@ public class XmlDataContentHandler implements DataContentHandler {
     }
 
     /**
-     * return the DataFlavors for this <code>DataContentHandler</code>
+     * return the ActivationDataFlavor for this <code>DataContentHandler</code>
      * @return The DataFlavors.
      */
     @Override
-    public DataFlavor[] getTransferDataFlavors() { // throws Exception;
-        DataFlavor flavors[] = new DataFlavor[2];
+    public ActivationDataFlavor[] getTransferDataFlavors() { // throws Exception;
+        ActivationDataFlavor flavors[] = new ActivationDataFlavor[2];
 
         flavors[0] =
             new ActivationDataFlavor(streamSourceClass, "text/xml", "XML");
@@ -84,13 +83,13 @@ public class XmlDataContentHandler implements DataContentHandler {
     }
 
     /**
-     * return the Transfer Data of type DataFlavor from InputStream
+     * return the Transfer Data of type ActivationDataFlavor from InputStream
      * @param flavor The DataFlavor.
      * @param dataSource The DataSource.
      * @return The constructed Object.
      */
     @Override
-    public Object getTransferData(DataFlavor flavor, DataSource dataSource)
+    public Object getTransferData(ActivationDataFlavor flavor, DataSource dataSource)
         throws IOException {
         if (flavor.getMimeType().startsWith("text/xml") || 
                 flavor.getMimeType().startsWith("application/xml")) {

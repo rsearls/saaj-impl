@@ -40,11 +40,10 @@
 
 package mime.custom;
 
-import java.awt.datatransfer.DataFlavor;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import javax.activation.*;
+import jakarta.activation.*;
 
 /**
  * DataContentHandler for Content-Type : custom/factory
@@ -64,24 +63,24 @@ public class FactoryDataContentHandler implements DataContentHandler {
     }
 
     /**
-     * Return the DataFlavors for this <code>DataContentHandler</code>.
+     * Return the ActivationDataFlavor for this <code>DataContentHandler</code>.
      *
-     * @return The DataFlavors
+     * @return The ActivationDataFlavor
      */
     @Override
-    public DataFlavor[] getTransferDataFlavors() { // throws Exception;
-        return new DataFlavor[] { getDF() };
+    public ActivationDataFlavor[] getTransferDataFlavors() { // throws Exception;
+        return new ActivationDataFlavor[] { getDF() };
     }
 
     /**
-     * Return the Transfer Data of type DataFlavor from InputStream.
+     * Return the Transfer Data of type ActivationDataFlavor from InputStream.
      *
-     * @param df The DataFlavor
-     * @param ins The InputStream corresponding to the data
+     * @param df The ActivationDataFlavor
+     * @param ds The InputStream corresponding to the data
      * @return String object
      */
     @Override
-    public Object getTransferData(DataFlavor df, DataSource ds)
+    public Object getTransferData(ActivationDataFlavor df, DataSource ds)
         throws IOException {
         // use myDF.equals to be sure to get ActivationDataFlavor.equals,
         // which properly ignores Content-Type parameters in comparison

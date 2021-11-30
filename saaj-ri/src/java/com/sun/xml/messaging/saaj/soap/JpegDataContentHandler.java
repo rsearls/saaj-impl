@@ -41,13 +41,10 @@
 package com.sun.xml.messaging.saaj.soap;
 
 import java.awt.*;
-import java.awt.datatransfer.DataFlavor;
 import java.awt.image.BufferedImage;
 import java.io.*;
 
-import javax.activation.*;
-
-//import com.sun.image.codec.jpeg.*;
+import jakarta.activation.*;
 import javax.imageio.ImageIO;
 
 /**
@@ -62,12 +59,12 @@ public class JpegDataContentHandler
     public static final String STR_SRC = "java.awt.Image";
 
     /**
-     * Return the DataFlavors for this <code>DataContentHandler</code>
+     * Return the ActivationDataFlavor for this <code>DataContentHandler</code>
      * @return The DataFlavors.
      */
     @Override
-    public DataFlavor[] getTransferDataFlavors() { // throws Exception;
-        DataFlavor flavors[] = new DataFlavor[1];
+    public ActivationDataFlavor[] getTransferDataFlavors() { // throws Exception;
+        ActivationDataFlavor flavors[] = new ActivationDataFlavor[1];
 
         try {
             flavors[0] =
@@ -83,13 +80,13 @@ public class JpegDataContentHandler
     }
 
     /**
-     * Return the Transfer Data of type DataFlavor from InputStream
-     * @param df The DataFlavor
+     * Return the Transfer Data of type ActivationDataFlavor from InputStream
+     * @param df The ActivationDataFlavor
      * @param ds The DataSource
      * @return The constructed Object.
      */
     @Override
-    public Object getTransferData(DataFlavor df, DataSource ds) {
+    public Object getTransferData(ActivationDataFlavor df, DataSource ds) {
 
         // this is sort of hacky, but will work for the
         // sake of testing...

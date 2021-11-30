@@ -51,7 +51,7 @@ import java.net.URL;
 import java.util.Enumeration;
 import java.util.Properties;
 
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 
 public class UddiPing {
 

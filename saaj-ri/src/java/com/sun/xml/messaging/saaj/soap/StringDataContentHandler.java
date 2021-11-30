@@ -40,10 +40,9 @@
 
 package com.sun.xml.messaging.saaj.soap;
 
-import java.awt.datatransfer.DataFlavor;
 import java.io.*;
 
-import javax.activation.*;
+import jakarta.activation.*;
 import com.sun.xml.messaging.saaj.packaging.mime.internet.MimeUtility;
 import com.sun.xml.messaging.saaj.packaging.mime.internet.ContentType;
 
@@ -62,32 +61,32 @@ public class StringDataContentHandler implements DataContentHandler {
     }
 
     /**
-     * Return the DataFlavors for this <code>DataContentHandler</code>.
+     * Return the ActivationDataFlavor for this <code>DataContentHandler</code>.
      *
      * @return The DataFlavors
      */
     @Override
-    public DataFlavor[] getTransferDataFlavors() {
-	return new DataFlavor[] { getDF() };
+    public ActivationDataFlavor[] getTransferDataFlavors() {
+	return new ActivationDataFlavor[] { getDF() };
     }
 
     /**
-     * Return the Transfer Data of type DataFlavor from InputStream.
+     * Return the Transfer Data of type ActivationDataFlavor from InputStream.
      *
-     * @param df The DataFlavor
+     * @param df The ActivationDataFlavor
      * @param ds The DataSource corresponding to the data
      * @return String object
      */
     @Override
-    public Object getTransferData(DataFlavor df, DataSource ds)
+	public Object getTransferData(ActivationDataFlavor df, DataSource ds)
 			throws IOException {
-	// use myDF.equals to be sure to get ActivationDataFlavor.equals,
-	// which properly ignores Content-Type parameters in comparison
-	if (getDF().equals(df))
-	    return getContent(ds);
-	else
-	    return null;
-    }
+		// use myDF.equals to be sure to get ActivationDataFlavor.equals,
+		// which properly ignores Content-Type parameters in comparison
+		if (getDF().equals(df))
+			return getContent(ds);
+		else
+			return null;
+	}
 
     @Override
     public Object getContent(DataSource ds) throws IOException {
