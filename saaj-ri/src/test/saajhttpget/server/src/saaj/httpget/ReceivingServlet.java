@@ -1,7 +1,7 @@
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
  *
- * Copyright (c) 1997-2017 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997-2021 Oracle and/or its affiliates. All rights reserved.
  *
  * The contents of this file are subject to the terms of either the GNU
  * General Public License Version 2 only ("GPL") or the Common Development
@@ -43,10 +43,10 @@ package saaj.httpget;
 import java.io.*;
 import java.util.*;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
-import javax.xml.soap.*;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.*;
+import jakarta.xml.soap.*;
 
 
 /**
@@ -61,7 +61,7 @@ import javax.xml.soap.*;
  * <P>
  */
 public  class ReceivingServlet extends HttpServlet {
-
+    //private static final long serialVersionUID =
 
     /**
      * The <code>MessageFactory</code> object that will be used internally
@@ -115,11 +115,11 @@ public  class ReceivingServlet extends HttpServlet {
      *         in the message sent to the servlet
      */
     protected static MimeHeaders getHeaders(HttpServletRequest req) {
-        Enumeration enumeration = req.getHeaderNames();
+        Enumeration<String> enumeration = req.getHeaderNames();
         MimeHeaders headers = new MimeHeaders();
 
         while (enumeration.hasMoreElements()) {
-            String headerName = (String) enumeration.nextElement();
+            String headerName = enumeration.nextElement();
             String headerValue = req.getHeader(headerName);
 
             StringTokenizer values = new StringTokenizer(headerValue, ",");
@@ -143,10 +143,10 @@ public  class ReceivingServlet extends HttpServlet {
      * @see #getHeaders
      */
     protected static void putHeaders(MimeHeaders headers, HttpServletResponse res) {
-        Iterator it = headers.getAllHeaders();
+        Iterator<MimeHeader> it = headers.getAllHeaders();
 
         while (it.hasNext()) {
-            MimeHeader header = (MimeHeader) it.next();
+            MimeHeader header = it.next();
 
             String[] values = headers.getHeader(header.getName());
 
