@@ -43,7 +43,7 @@ package namespace;
 import java.util.Iterator;
 
 import javax.xml.namespace.QName;
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 import javax.xml.transform.stream.StreamSource;
 
 import junit.framework.TestCase;

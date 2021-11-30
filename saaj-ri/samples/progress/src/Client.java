@@ -48,7 +48,7 @@
 import java.io.IOException;
 import java.net.InetAddress;
 
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 
 public class Client implements SOAPCallback {
 

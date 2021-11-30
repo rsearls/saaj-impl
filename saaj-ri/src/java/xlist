@@ -1,0 +1,145 @@
+ #	* ./com/sun/xml/messaging/saaj/client/p2p/HttpSOAPConnection.java
++	./com/sun/xml/messaging/saaj/client/p2p/HttpSOAPConnectionFactory.java
++	./com/sun/xml/messaging/saaj/SOAPExceptionImpl.java
++	./com/sun/xml/messaging/saaj/util/LogDomainConstants.java
++	./com/sun/xml/messaging/saaj/util/FastInfosetReflection.java
+#	* ./com/sun/xml/messaging/saaj/util/SAAJUtil.java
++	./com/sun/xml/messaging/saaj/util/ByteOutputStream.java
++	./com/sun/xml/messaging/saaj/util/RejectDoctypeSaxFilter.java
++	./com/sun/xml/messaging/saaj/util/ParserPool.java
++	./com/sun/xml/messaging/saaj/util/Base64.java
++	./com/sun/xml/messaging/saaj/util/TeeInputStream.java
++	./com/sun/xml/messaging/saaj/util/FinalArrayList.java
++	./com/sun/xml/messaging/saaj/util/ByteInputStream.java
++	./com/sun/xml/messaging/saaj/util/MimeHeadersUtil.java
+#	* ./com/sun/xml/messaging/saaj/util/stax/LazyEnvelopeStaxReader.java
+#	* ./com/sun/xml/messaging/saaj/util/stax/SaajStaxWriter.java
++	./com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx.java
++	./com/sun/xml/messaging/saaj/util/stax/SaajStaxReaderEx.java
+#	* ./com/sun/xml/messaging/saaj/util/JaxmURI.java
+#	* ./com/sun/xml/messaging/saaj/util/JAXMStreamSource.java
++	./com/sun/xml/messaging/saaj/util/XMLDeclarationParser.java
++	./com/sun/xml/messaging/saaj/util/transform/EfficientStreamingTransformer.java
++	./com/sun/xml/messaging/saaj/util/NamespaceContextIterator.java
++	./com/sun/xml/messaging/saaj/util/ParseUtil.java
++	./com/sun/xml/messaging/saaj/LazyEnvelopeSource.java
+#	* ./com/sun/xml/messaging/saaj/soap/ImageDataContentHandler.java
+#	* ./com/sun/xml/messaging/saaj/soap/MessageImpl.java
++	./com/sun/xml/messaging/saaj/soap/SOAPDocument.java
+#	* ./com/sun/xml/messaging/saaj/soap/AttachmentPartImpl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/Message1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/SOAPPart1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/FaultElement1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/Fault1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/DetailEntry1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/HeaderElement1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/SOAPMessageFactory1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/Detail1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/Body1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/SOAPFactory1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/Envelope1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/BodyElement1_1Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_1/Header1_1Impl.java
+#	* ./com/sun/xml/messaging/saaj/soap/XmlDataContentHandler.java
+#	* ./com/sun/xml/messaging/saaj/soap/GifDataContentHandler.java
++	./com/sun/xml/messaging/saaj/soap/Envelope.java
++	./com/sun/xml/messaging/saaj/soap/MessageFactoryImpl.java
+#	* ./com/sun/xml/messaging/saaj/soap/EnvelopeFactory.java
++	./com/sun/xml/messaging/saaj/soap/LazyEnvelope.java
+#	* ./com/sun/xml/messaging/saaj/soap/impl/NodeListImpl.java
++	./com/sun/xml/messaging/saaj/soap/impl/HeaderImpl.java
+#	* ./com/sun/xml/messaging/saaj/soap/impl/CDATAImpl.java
++	./com/sun/xml/messaging/saaj/soap/impl/ElementFactory.java
++	./com/sun/xml/messaging/saaj/soap/impl/FaultImpl.java
++	./com/sun/xml/messaging/saaj/soap/impl/DetailEntryImpl.java
++	./com/sun/xml/messaging/saaj/soap/impl/BodyElementImpl.java
++	./com/sun/xml/messaging/saaj/soap/impl/HeaderElementImpl.java
++	./com/sun/xml/messaging/saaj/soap/impl/FaultElementImpl.java
+#	* ./com/sun/xml/messaging/saaj/soap/impl/TextImpl.java
+#	* ./com/sun/xml/messaging/saaj/soap/impl/ElementImpl.java
++	./com/sun/xml/messaging/saaj/soap/impl/TreeException.java
++	./com/sun/xml/messaging/saaj/soap/impl/EnvelopeImpl.java
+#	* ./com/sun/xml/messaging/saaj/soap/impl/NamedNodeMapImpl.java
++	./com/sun/xml/messaging/saaj/soap/impl/BodyImpl.java
+#	* ./com/sun/xml/messaging/saaj/soap/impl/SOAPCommentImpl.java
+#	* ./com/sun/xml/messaging/saaj/soap/impl/SOAPTextImpl.java
++	./com/sun/xml/messaging/saaj/soap/impl/DetailImpl.java
+#	* ./com/sun/xml/messaging/saaj/soap/SOAPPartImpl.java
++	./com/sun/xml/messaging/saaj/soap/SOAPIOException.java
+#	* ./com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler.java
++	./com/sun/xml/messaging/saaj/soap/SOAPDocumentFragment.java
++	./com/sun/xml/messaging/saaj/soap/name/NameImpl.java
+#	* ./com/sun/xml/messaging/saaj/soap/StringDataContentHandler.java
++	./com/sun/xml/messaging/saaj/soap/StaxReaderBridge.java
++	./com/sun/xml/messaging/saaj/soap/StaxBridge.java
+#	* ./com/sun/xml/messaging/saaj/soap/FastInfosetDataContentHandler.java
++	./com/sun/xml/messaging/saaj/soap/dynamic/SOAPFactoryDynamicImpl.java
++	./com/sun/xml/messaging/saaj/soap/dynamic/SOAPMessageFactoryDynamicImpl.java
++	./com/sun/xml/messaging/saaj/soap/ContextClassloaderLocal.java
++	./com/sun/xml/messaging/saaj/soap/SOAPFactoryImpl.java
+#	* ./com/sun/xml/messaging/saaj/soap/JpegDataContentHandler.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/Fault1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/DetailEntry1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/Message1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/BodyElement1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/SOAPFactory1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/Header1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/HeaderElement1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/SOAPMessageFactory1_2Impl.java
+#	* ./com/sun/xml/messaging/saaj/soap/ver1_2/Envelope1_2Impl.java
+#	* ./com/sun/xml/messaging/saaj/soap/ver1_2/FaultElement1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/SOAPPart1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/Body1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/ver1_2/Detail1_2Impl.java
++	./com/sun/xml/messaging/saaj/soap/StaxLazySourceBridge.java
+#	*	./com/sun/xml/messaging/saaj/soap/SOAPDocumentImpl.java
++	./com/sun/xml/messaging/saaj/soap/SAAJMetaFactoryImpl.java
++	./com/sun/xml/messaging/saaj/soap/SOAPVersionMismatchException.java
++	./com/sun/xml/messaging/saaj/packaging/mime/MessagingException.java
++	./com/sun/xml/messaging/saaj/packaging/mime/MultipartDataSource.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/MimeBodyPart.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/ParameterList.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/MimePartDataSource.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/BMMimeMultipart.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/HeaderTokenizer.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/MimeMultipart.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/MimePullMultipart.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/InternetHeaders.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/ParseException.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/ContentDisposition.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/UniqueValue.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/MimeUtility.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/SharedInputStream.java
++	./com/sun/xml/messaging/saaj/packaging/mime/internet/ContentType.java
++	./com/sun/xml/messaging/saaj/packaging/mime/Header.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/BASE64DecoderStream.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/LineInputStream.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/UUEncoderStream.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/OutputUtil.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/BEncoderStream.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/QPDecoderStream.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/BASE64EncoderStream.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/QPEncoderStream.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/ASCIIUtility.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/QEncoderStream.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/QDecoderStream.java
++	./com/sun/xml/messaging/saaj/packaging/mime/util/UUDecoderStream.java
+===============
+=#	saaj-ri/src/main/java/com/sun/xml/messaging/saaj/client/p2p/HttpSOAPConnection.java
+=#	saaj-ri/src/main/java/com/sun/xml/messaging/saaj/soap/AttachmentPartImpl.java
+saaj-ri/src/main/java/	com/sun/xml/messaging/saaj/soap/FastInfosetDataContentHandler.java
+saaj-ri/src/main/java/	com/sun/xml/messaging/saaj/soap/GifDataContentHandler.java
+saaj-ri/src/main/java/	com/sun/xml/messaging/saaj/soap/ImageDataContentHandler.java
+saaj-ri/src/main/java/	com/sun/xml/messaging/saaj/soap/JpegDataContentHandler.java
+saaj-ri/src/main/java/	com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler.java
+saaj-ri/src/main/java/	com/sun/xml/messaging/saaj/soap/StringDataContentHandler.java
+saaj-ri/src/main/java/	com/sun/xml/messaging/saaj/soap/XmlDataContentHandler.java
+=+#	saaj-ri/src/main/java/com/sun/xml/messaging/saaj/soap/impl/NodeListImpl.java
+=+#	saaj-ri/src/main/java/com/sun/xml/messaging/saaj/util/JaxmURI.java
+=+#	saaj-ri/src/main/java/com/sun/xml/messaging/saaj/util/stax/LazyEnvelopeStaxReader.java
+#+#	saaj-ri/src/main/java/com/sun/xml/messaging/saaj/util/stax/SaajStaxWriter.java
+
+
+
+
+

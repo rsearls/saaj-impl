@@ -43,8 +43,8 @@ package saaj.receiver;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.xml.soap.SOAPEnvelope;
-import javax.xml.soap.SOAPMessage;
+import jakarta.xml.soap.SOAPEnvelope;
+import jakarta.xml.soap.SOAPMessage;
 
 import com.sun.xml.messaging.soap.server.SAAJServlet;
 

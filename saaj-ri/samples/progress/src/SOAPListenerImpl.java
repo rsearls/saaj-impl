@@ -58,7 +58,7 @@ import java.nio.charset.*;
 import java.util.Iterator;
 import java.util.Set;
 
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 
 public class SOAPListenerImpl implements SOAPListener {
 
