@@ -47,7 +47,7 @@ import java.io.OutputStreamWriter;
 import java.util.logging.Level;
 
 import javax.xml.namespace.QName;
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.XMLStreamWriter;

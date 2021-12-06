@@ -54,10 +54,10 @@ import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
-import javax.xml.soap.*;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.*;
+import jakarta.xml.soap.*;
 
 /**
  * Sample servlet that is used for sending the message.

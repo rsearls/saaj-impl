@@ -58,6 +58,14 @@ public final class SAAJUtil {
         }
     }
 
+    public static Integer getSystemInteger(String arg) {
+        try {
+            return Integer.getInteger(arg);
+        } catch (SecurityException ex) {
+            return null;
+        }
+    }
+
     public static String getSystemProperty(String arg) {
         try {
             return System.getProperty(arg);

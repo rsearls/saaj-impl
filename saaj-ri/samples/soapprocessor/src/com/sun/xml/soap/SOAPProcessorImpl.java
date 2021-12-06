@@ -43,7 +43,7 @@ package com.sun.xml.soap;
 import java.util.*;
 
 import javax.xml.namespace.QName;
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 
 public class SOAPProcessorImpl extends SOAPProcessor {
 

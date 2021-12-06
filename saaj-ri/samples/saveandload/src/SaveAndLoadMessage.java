@@ -40,11 +40,11 @@
 
 import java.net.URL;
 
-import javax.activation.DataHandler;
+import jakarta.activation.DataHandler;
 
 import java.io.*;
 
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 
 import com.sun.xml.messaging.soap.SOAPMessagePersister;
 

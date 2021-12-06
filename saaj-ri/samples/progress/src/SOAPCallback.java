@@ -46,7 +46,7 @@
 
 
 
-import javax.xml.soap.SOAPMessage;
+import jakarta.xml.soap.SOAPMessage;
 
 public interface SOAPCallback {
 	public void onMessage(SOAPMessage msg);

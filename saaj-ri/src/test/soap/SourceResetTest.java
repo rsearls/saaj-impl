@@ -44,7 +44,7 @@ import java.io.*;
 
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 
 
 import junit.framework.TestCase;

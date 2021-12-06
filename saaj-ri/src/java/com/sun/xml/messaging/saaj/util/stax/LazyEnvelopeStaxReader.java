@@ -42,7 +42,7 @@ package com.sun.xml.messaging.saaj.util.stax;
 
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.namespace.QName;
-import javax.xml.soap.SOAPException;
+import jakarta.xml.soap.SOAPException;
 import javax.xml.stream.Location;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;

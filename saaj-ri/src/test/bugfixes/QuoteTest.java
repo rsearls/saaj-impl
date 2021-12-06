@@ -50,7 +50,7 @@ import java.io.StringWriter;
 import java.util.Iterator;
 
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;

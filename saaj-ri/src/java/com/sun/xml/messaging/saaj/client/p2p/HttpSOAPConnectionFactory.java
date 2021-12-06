@@ -40,7 +40,7 @@
 
 package com.sun.xml.messaging.saaj.client.p2p;
 
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 
 /**
  * Implementation of the SOAPConnectionFactory

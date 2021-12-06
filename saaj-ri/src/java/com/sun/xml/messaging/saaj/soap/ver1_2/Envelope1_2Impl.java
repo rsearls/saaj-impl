@@ -48,7 +48,9 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 import javax.xml.namespace.QName;
-import javax.xml.soap.*;
+import jakarta.xml.soap.SOAPException;
+
+import jakarta.xml.soap.*;
 
 import com.sun.xml.messaging.saaj.SOAPExceptionImpl;
 import com.sun.xml.messaging.saaj.soap.SOAPDocumentImpl;
@@ -75,7 +77,7 @@ public class Envelope1_2Impl extends EnvelopeImpl {
         String prefix,
         boolean createHeader,
         boolean createBody)
-        throws SOAPException {
+        throws jakarta.xml.soap.SOAPException {
         super(
             ownerDoc,
             NameImpl.createEnvelope1_2Name(prefix),
@@ -98,7 +100,7 @@ public class Envelope1_2Impl extends EnvelopeImpl {
      * attribute to SOAP Envelope (SOAP 1.2 spec, part 1, section 5.1.1)
      */
     @Override
-    public void setEncodingStyle(String encodingStyle) throws SOAPException {
+    public void setEncodingStyle(String encodingStyle) throws jakarta.xml.soap.SOAPException {
         log.severe("SAAJ0404.ver1_2.no.encodingStyle.in.envelope");
         throw new SOAPExceptionImpl("encodingStyle attribute cannot appear on Envelope");
     }
@@ -108,20 +110,20 @@ public class Envelope1_2Impl extends EnvelopeImpl {
      * attribute to SOAP Envelope (SOAP 1.2 spec, part 1, section 5.1.1)
      */
     @Override
-    public SOAPElement addAttribute(Name name, String value)
-        throws SOAPException {
+    public jakarta.xml.soap.SOAPElement addAttribute(jakarta.xml.soap.Name name, String value)
+        throws jakarta.xml.soap.SOAPException {
         if (name.getLocalName().equals("encodingStyle")
-            && name.getURI().equals(SOAPConstants.URI_NS_SOAP_1_2_ENVELOPE)) {
+            && name.getURI().equals(jakarta.xml.soap.SOAPConstants.URI_NS_SOAP_1_2_ENVELOPE)) {
             setEncodingStyle(value);
         }
         return super.addAttribute(name, value);
     }
 
     @Override
-    public SOAPElement addAttribute(QName name, String value)
-        throws SOAPException {
+    public jakarta.xml.soap.SOAPElement addAttribute(QName name, String value)
+        throws jakarta.xml.soap.SOAPException {
         if (name.getLocalPart().equals("encodingStyle")
-            && name.getNamespaceURI().equals(SOAPConstants.URI_NS_SOAP_1_2_ENVELOPE)) {
+            && name.getNamespaceURI().equals(jakarta.xml.soap.SOAPConstants.URI_NS_SOAP_1_2_ENVELOPE)) {
             setEncodingStyle(value);
         }
         return super.addAttribute(name, value);
@@ -133,7 +135,7 @@ public class Envelope1_2Impl extends EnvelopeImpl {
      * is added after body in SOAP 1.2.
      */
     @Override
-    public SOAPElement addChildElement(Name name) throws SOAPException {
+    public jakarta.xml.soap.SOAPElement addChildElement(jakarta.xml.soap.Name name) throws jakarta.xml.soap.SOAPException {
         // check if body already exists
         if (getBody() != null) {
             log.severe("SAAJ0405.ver1_2.body.must.last.in.envelope");
@@ -144,7 +146,7 @@ public class Envelope1_2Impl extends EnvelopeImpl {
     }
 
     @Override
-    public SOAPElement addChildElement(QName name) throws SOAPException {
+    public jakarta.xml.soap.SOAPElement addChildElement(QName name) throws jakarta.xml.soap.SOAPException {
         // check if body already exists
         if (getBody() != null) {
             log.severe("SAAJ0405.ver1_2.body.must.last.in.envelope");
@@ -165,7 +167,7 @@ public class Envelope1_2Impl extends EnvelopeImpl {
      */
 
     @Override
-    public SOAPElement addTextNode(String text) throws SOAPException {
+    public jakarta.xml.soap.SOAPElement addTextNode(String text) throws SOAPException {
         log.log(
             Level.SEVERE,
             "SAAJ0416.ver1_2.adding.text.not.legal",

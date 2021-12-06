@@ -49,7 +49,7 @@ import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 
 import com.sun.xml.messaging.saaj.SOAPExceptionImpl;
 import com.sun.xml.messaging.saaj.util.*;
@@ -72,6 +72,28 @@ class HttpSOAPConnection extends SOAPConnection {
     protected static final Logger log =
         Logger.getLogger(LogDomainConstants.HTTP_CONN_DOMAIN,
                          "com.sun.xml.messaging.saaj.client.p2p.LocalStrings");
+
+
+    /**
+     * URLConnection connect timeout
+     */
+    private static int CONNECT_TIMEOUT;
+
+    /**
+     * URLConnection read timeout
+     */
+    private static int READ_TIMEOUT;
+
+    static {
+        Integer i = SAAJUtil.getSystemInteger("saaj.connect.timeout");
+        if (i != null) {
+            CONNECT_TIMEOUT = i;
+        }
+        i = SAAJUtil.getSystemInteger("saaj.read.timeout");
+        if (i != null) {
+            READ_TIMEOUT = i;
+        }
+    }
 
 
     MessageFactory messageFactory = null;
@@ -207,6 +229,8 @@ class HttpSOAPConnection extends SOAPConnection {
             httpConnection.setDoInput(true);
             httpConnection.setUseCaches(false);
             httpConnection.setInstanceFollowRedirects(true);
+            httpConnection.setConnectTimeout(CONNECT_TIMEOUT);
+            httpConnection.setReadTimeout(READ_TIMEOUT);
 
             if (message.saveRequired())
                 message.saveChanges();
@@ -458,6 +482,8 @@ class HttpSOAPConnection extends SOAPConnection {
             httpConnection.setDoInput(true);
             httpConnection.setUseCaches(false);
             httpConnection.setInstanceFollowRedirects(true);
+            httpConnection.setConnectTimeout(CONNECT_TIMEOUT);
+            httpConnection.setReadTimeout(READ_TIMEOUT);
 
             httpConnection.connect();
 

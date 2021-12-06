@@ -44,7 +44,7 @@ import java.util.*;
 
 import java.io.*;
 
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 import javax.xml.transform.stream.StreamSource;
 
 /** 
